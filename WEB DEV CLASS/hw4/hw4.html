@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!--
+home: Felix Ferreira
+url: http://cis444.cs.csusm.edu/ferre079/hw4/hw4.html
+
+Develop and test an HTML document to use the DOM 2 event model that has text boxes for apple (59 cents each), orange (49 cents each), and banana (39 cents each), along with a Submit button. 
+
+These text boxes take a number, which is the purchased number of the particular fruit. Add reality checks to the text boxes of the document to ensure that the input values are numbers in the range from 0 to 99. 
+
+Each of the text boxes should have its own event handler for this purpose. These handlers must also add the cost of their fruit to a total cost. 
+
+An event handler for the Submit button must produce an alert window with the message Your total cost is $xxx.xx, where xxx.xx is the total cost of the chosen fruits with 2 decimal places, including 7.75 percent sales tax. This handler must return false (to avoid actual submission of the form data). You also must use an external style sheet to display various input boxes in appropriate background color.
+
+After creating, testing, and validating the HTML5 and CSS documents, publish them together with your Javascript code file on your document root on the server. Then submit their URLs with your documents as attachments in the Cougar Course by 4:00 pm on the due day.
+-->
+    
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title>HW 4</title>
+    <link rel="stylesheet" type="text/css" href="hw4.css">
+    <script type="text/javascript" src="hw4.js"></script>
+</head>
+    
+<body onload="attachListeners()">
+    
+    <h1>Homework 4: Fruit Calculator</h1>
+    
+    <form name="fruit_form" id="fruit_form">
+        <table id="fruit_table" title="fruit_table" >
+            <caption>How much fruit do you want to purchase?</caption>
+            
+            <tr>
+                <th id="fruit_header">Fruit</th>
+                <th id="quantity_header">Quantity</th>
+            </tr>
+            
+            <tr id="appleRow">
+                <td headers="fruit_header"><label for="apple">Apple (59¢/ea):</label></td>
+                <td headers="quantity_header"><input type="text" value="0" id='apple' name="apple"></td>
+            </tr>
+            
+            <tr id="orangeRow">
+                <td headers="fruit_header"><label for="orange">Orange (49¢/ea):</label></td>
+                <td headers="quantity_header"><input type="text" value="0" id='orange' name="orange"></td>
+            </tr>
+            
+            <tr id="bananaRow">
+                <td headers="fruit_header"><label for="banana">Banana (39¢/ea):</label></td>
+                <td headers="quantity_header"><input type="text" value="0" id='banana' name="banana"></td>
+            </tr>
+        
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+            
+        
+        </table>
+        
+        
+        
+    </form>
+    
+    
+    
+    
+    
+    
+    
+    
+</body>

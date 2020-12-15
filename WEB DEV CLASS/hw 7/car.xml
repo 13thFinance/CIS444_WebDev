@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Im going to study instead but hopefully these are a few points instead of 0-->
+
+<car>
+    <make>make</make>
+	
+    <model>model</model>
+	
+    <year>year</year>
+	
+    <color>color</color>
+	
+    <engine>
+        <number_of_cylinders>4</number_of_cylinders>
+        <fuel_system>fuel_system</fuel_system>
+    </engine>
+	
+    <number_of_doors>0</number_of_doors>
+	
+    <transmission_type>auto</transmission_type>
+	
+    <accessories>
+		<xs:element name="radio" use="required">
+		  <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:enumeration value="yes"/>
+			  <xs:enumeration value="no"/>
+			</xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
+		
+		<xs:element name="air_conditioning" use="required">
+		  <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:enumeration value="yes"/>
+			  <xs:enumeration value="no"/>
+			</xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
+		
+		<xs:element name="power_windows" use="required">
+		  <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:enumeration value="yes"/>
+			  <xs:enumeration value="no"/>
+			</xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
+		
+		<xs:element name="power_steering" use="required">
+		  <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:enumeration value="yes"/>
+			  <xs:enumeration value="no"/>
+			</xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
+		
+		<xs:element name="power_brakes" use="required">
+		  <xs:simpleType>
+			<xs:restriction base="xs:string">
+			  <xs:enumeration value="yes"/>
+			  <xs:enumeration value="no"/>
+			</xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
+        
+    </accessories>
+    
+</car>

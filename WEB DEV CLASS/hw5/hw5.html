@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!--
+Name: Felix Ferreira
+URL: http://cis444.cs.csusm.edu/ferre079/hw5/hw5.html
+
+Create a document that has a small image of yourself, which must appear with the center at the position of the mouse cursor when the mouse button is clicked, regardless of the position of the cursor at the time.  Include a heading explaining what the page is for.  Use an external style sheet to display the heading in red color.
+
+-->
+
+<html lang="en" onclick="moveMe(event)">
+
+<head>
+    <meta charset="utf-8">
+    <title>HW 5</title>
+    <link rel="stylesheet" type="text/css" href="hw5.css">
+    <script type="text/javascript" src="hw5.js"></script>
+</head>
+    
+<body>
+    <h1>Homework 5: It me!</h1>
+    <h2>This page is for hw5. I showcases javascripts ability to dynamically change the absolute position of certain elements, in this case, my face. Click anywhere on this page to reposition my face!</h2>
+    
+    <img src="me.jpg" alt="This is supposed to be a picture of me." id="me">
+    
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+/*
+Felix Ferreira
+url: http://cis444.cs.csusm.edu/ferre079/hw2/hw2.css
+could have used contextual selectors instead
+*/
+.l1_ol {list-style-type: upper-roman;}
+.l2_ol {list-style-type: upper-alpha}
+.l3_ol {list-style-type: decimal}
+
+.compact {background-color: pink;}
+.midsize {background-color: blue;}
+.sports {background-color: red;}
